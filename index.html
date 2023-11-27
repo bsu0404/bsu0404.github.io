@@ -15,33 +15,32 @@
         margin: 0;
         padding: 20px;
       }
-      .education {
-        /* text-align: center; */
-      }
-      .skill .list {
-        justify-content: space-between;
-      }
+      /* 공통 부분 */
       .list {
         display: flex;
+      }
+      .card_title {
+        font-weight: bold;
+        font-family: "Pretendard-Regular";
+      }
+      .card {
+        margin: 0 10px;
+      }
+      /* 스킬 */
+      .skill .list {
+        justify-content: space-between;
       }
       .skill .card_img {
         width: 200px;
         height: 200px;
         object-fit: contain;
       }
-
-      .card_title {
-        font-weight: bold;
-        font-family: "Pretendard-Regular";
-      }
+      /* 프로젝트 */
       .project .card_img {
         width: 300px;
         height: 200px;
         object-fit: contain;
         border: 1px solid gray;
-      }
-      .card {
-        margin: 0 10px;
       }
       .card_button {
         background-color: rgb(222, 192, 249);
@@ -54,7 +53,7 @@
         height: 40px;
         cursor: pointer;
       }
-      .project .list .card .description {
+      .project .list .card .description-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -74,7 +73,7 @@
     <div class="education">
       <h2>학력👨‍🎓</h2>
       <hr />
-      세종대학교 2020.03 - (4학년 2학기 휴학) - 학점 3.87 <br /><br />
+      세종대학교 2020.03 - (4학년 2학기 휴학) <br /><br />
       <!-- <a href="./orderList">order list</a> -->
     </div>
     <article class="skill">
@@ -143,7 +142,7 @@
       <div class="list">
         <div class="card">
           <img src="asssets\funcare_appicon(500).png" alt="" class="card_img" />
-          <div class="description">
+          <div class="description-wrapper">
             <p class="card_title">펀케어 앱 <br />쇼핑몰, 커뮤니티</p>
             <input
               class="card_button"
