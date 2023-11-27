@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple_portfolio</title>
+    <style>
+      body {
+        padding: 0 100px;
+        margin: 0;
+      }
+      .title {
+        text-align: center;
+        border-top: 20px solid rgb(222, 192, 249);
+        margin: 0;
+        padding: 20px;
+      }
+
+      .skill .card_img {
+        /* width: 200px;
+        height: 200px;
+        object-fit: contain; */
+      }
+
+      .card_title {
+        font-weight: bold;
+        font-family: "Pretendard-Regular";
+      }
+      .project .card_img {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+        border: 1px solid gray;
+      }
+      .card {
+        margin: 0 10px;
+      }
+      .card_button {
+        background-color: rgb(222, 192, 249);
+        font-weight: bold;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        font-family: "Pretendard-Regular";
+        height: 40px;
+        cursor: pointer;
+      }
+      .project .list .card .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">펀케어 앱🔎</h1>
+    <div class="contact">
+      <h2>소개👨</h2>
+      <hr />
+      <ul>
+        <li>
+          병원치료 이후 재활, 예방을 위한 환자들의 회복을 돕는 지역기반
+          플랫폼입니다.
+        </li>
+        <li>
+          (주) FionLabs 외주 (2023.03 ~ 2023.12) Code로, 소스코드 공개가
+          불가능합니다.
+        </li>
+        <li>펀케어1.0 버전에 커뮤니티와 쇼핑몰 추가</li>
+        <li>
+          mall은 카테고리별 상품, 주문, 결제, 배송관리, 리뷰, 문의, 포인트 등의
+          기능이 있습니다
+        </li>
+        <li>
+          커뮤니티는 4종류로 각 커뮤니티별 게시글 crud, 댓글/대댓글, 신고, 공감,
+          신청, tts의 기능이 있습니다
+        </li>
+        <li>
+          기업과 협력한 프로젝트로 기업에서 figma를 통해 소통하며 화면을
+          구현했습니다.
+        </li>
+      </ul>
+
+      <!-- <a href="./orderList">order list</a> -->
+    </div>
+    <div>
+      <div class="team">
+        <h2>Team👥</h2>
+        <hr />
+        <ul>
+          <li>Flutter 개발 2명</li>
+          <li>Server 개발 2명</li>
+        </ul>
+      </div>
+    </div>
+
+    <article class="skill">
+      <div class="">
+        <h2>기술스택⚒️</h2>
+        <hr />
+        사용한 기술입니다.<br /><br />
+      </div>
+      <div class="list">
+        <div class="card">
+          <img src="asssets\funcare_skill.png" alt="" class="card_img" />
+          <p class="card_title">Flutter</p>
+        </div>
+      </div>
+    </article>
+    <div class="project">
+      <div>
+        <h2>시연영상💻</h2>
+        <hr />
+        <br /><br />
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/6051WE89ONY?si=Vl1ZY2_D3be6IFt2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
